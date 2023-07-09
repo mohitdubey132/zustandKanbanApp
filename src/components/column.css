@@ -1,0 +1,62 @@
+.Column{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    min-height: 20rem;
+    background-color: var(--COLOR-GRAY-DARK);
+    max-width: 20rem;
+    margin: 0px 1rem;
+    border-radius: 8px;
+    padding:0.5rem;
+    height: fit-content;
+    gap: .5rem;
+}
+.column.drop {
+    border-color: white;
+  }
+.columHeader{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0.3rem 1rem; */
+    align-items: baseline;
+    
+}
+.columHeader >button{
+    /* background-color: rgba(255, 0, 0, 0.176); */
+   all :unset;
+   color: #000;
+   background-color: rgb(30, 245, 51);
+   padding: .2rem .5rem;
+   border-radius: 24px 10px;
+   height: fit-content;
+}
+.columHeader button:hover{
+    background-color: rgb(250, 190, 200);
+    cursor: pointer;
+}
+
+.model{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #0000003e;
+}
+.modelClaass{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #fff;
+    z-index: 6;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    top:50%;
+    left: 50%;
+    border-radius: 18px;
+    position: absolute;
+}

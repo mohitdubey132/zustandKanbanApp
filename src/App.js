@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+// import Columns from './components/Columns';
 import './App.css';
-
+import Columns from './components/Columns';
+import bg from './components/bg.jpeg'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (<>
+    <div className='AppHeader' style={{backgroundImage:new (URL(bg))}}>  <h3>Kanban App</h3>
+    <h5>using Zustand state management library</h5>
     </div>
+    <div className="App" >
+     <Columns  state={'PLANNED'}/>
+     <Columns  state={'ONGOING'}/>
+     <Columns state={'DONE'}/>
+    </div>
+    </>
   );
 }
 
