@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import {persist} from "zustand/middleware";
 const store = (set) => ({
   draggedTask: null,
   tasks: [{ title: "Test Task", state: "PLANNED" }],
@@ -17,4 +18,4 @@ const store = (set) => ({
     })),
 });
 
-export const useStore = create(store);
+export const useStore = create(persist(store ,{name:"store"}));
